@@ -1,0 +1,21 @@
+[[command]]
+name = "script"
+module = "wasmer/winterjs:winterjs"
+runner = "https://webc.org/runner/wasi"
+
+[command.annotations.wasi]
+env = [ "JS_PATH=/src/index.js",]
+main-args = [ "/src/index.js",]
+
+[package]
+name = "sahbibraham/javascript-worker-dbc"
+version = "0.2.0"
+description = "JS Service Worker Wasmer starter package"
+readme = "README.md"
+repository = "https://github.com/bsahbi/javascript-worker-dbc"
+
+[dependencies]
+"wasmer/winterjs" = "*"
+
+[fs]
+"/src" = "./src"

@@ -1,0 +1,3 @@
+kind: wasmer.io/App.v0
+name: sahbibraham-javascript-worker-dbc
+package: sahbibraham/javascript-worker-dbc
